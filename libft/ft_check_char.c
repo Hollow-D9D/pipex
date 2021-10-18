@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-int				ft_check_char(char const *x, char y)
+int	ft_check_char(char const *x, char y)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < (int)ft_strlen(x))

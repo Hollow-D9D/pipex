@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int				ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int sign;
-	int result;
-	int i;
+	int	sign;
+	int	result;
+	int	i;
 
 	i = -1;
 	sign = 1;
 	result = 0;
-	while (str[++i] == '\t'
-		|| str[i] == '\n' || str[i] == '\r' ||
-			str[i] == '\v' || str[i] == '\f' || str[i] == ' ')
+	while (str[++i] == '\t' || str[i]
+		== '\n' || str[i] == '\r' || str[i]
+		== '\v' || str[i] == '\f' || str[i] == ' ')
 		;
 	if (str[i] == '-' && ++i)
 		sign *= -1;

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char					*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	unsigned int	i;
 	unsigned int	j;
@@ -21,10 +21,12 @@ char					*ft_strtrim(char const *s1, char const *set)
 	i = ft_strlen(s1);
 	j = 0;
 	while (j < i)
+	{
 		if (ft_check_char(set, s1[j]))
 			j++;
 		else
 			break ;
+	}
 	s1 += j;
 	if (*s1)
 		if (!(i = ft_strlen(s1) - 1))

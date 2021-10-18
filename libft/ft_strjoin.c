@@ -30,6 +30,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_memmove(rtn, s1, s1_len);
 	ft_memmove(rtn + s1_len, s2, s2_len);
 	rtn[stot_len - 1] = '\0';
-	free((char *)s1);
 	return (rtn);
 }
